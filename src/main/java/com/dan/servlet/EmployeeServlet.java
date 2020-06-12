@@ -121,7 +121,7 @@ public class EmployeeServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("employee", employee);
-        req.getRequestDispatcher("/jsp/admin/view.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/admin/employeeView.jsp").forward(req, resp);
     }
 
     private void query(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -133,6 +133,6 @@ public class EmployeeServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("employeeList", list);
-        req.getRequestDispatcher("/jsp/admin/list.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/admin/employeeList.jsp").forward(req, resp);
     }
 }

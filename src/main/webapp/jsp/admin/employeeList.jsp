@@ -52,7 +52,7 @@
                 <span>xx</span>
                 <input type="text" name="" value="">
                 <input value="查询" type="submit" id="search-button">
-                <a href="${pageContext.request.contextPath }/jsp/admin/add.jsp">创建账号</a>
+                <a href="${pageContext.request.contextPath }/jsp/admin/employeeAdd.jsp">创建账号</a>
             </form>
         </div>
         <table class="table-view">
