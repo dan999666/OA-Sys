@@ -79,7 +79,7 @@
                     <td><span>${employee.sex}</span></td>
                     <td><span>${employee.age}</span></td>
                     <td><span>${employee.deptName}</span></td>
-                    <td><span>${employee.ban}</span></td>
+                    <td><span>${employee.ban}</span></td><%--此处需要修改--%>
                     <td><span>${employee.email}</span></td>
                     <td><span>${employee.phone}</span></td>
                     <td>

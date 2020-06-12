@@ -1,12 +1,8 @@
-import com.dan.dao.BaseDao;
-import com.dan.dao.employee.EmployeeDao;
-import com.dan.dao.employee.EmployeeDaoImpl;
 import com.dan.entity.Employee;
-import com.dan.service.EmployeeService;
-import com.dan.service.EmployeeServiceImpl;
+import com.dan.service.employee.EmployeeService;
+import com.dan.service.employee.EmployeeServiceImpl;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Connection;
 import java.util.List;
 
 public class EmployeeServiceTest {
