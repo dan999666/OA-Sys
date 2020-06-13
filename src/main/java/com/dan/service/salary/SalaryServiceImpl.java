@@ -59,4 +59,17 @@ public class SalaryServiceImpl implements SalaryService {
         }
         return flag;
     }
+
+    @Override
+    public boolean modifySalaryById(Salary salary) throws Exception {
+        boolean flag = false;
+        Connection connection = BaseDao.getConnection();
+        int res = salaryDao.modifySalaryInfoById(connection, salary);
+        if (res > 0) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+        return flag;
+    }
 }

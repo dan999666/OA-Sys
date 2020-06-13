@@ -9,9 +9,9 @@
     <title>list show</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/reset.css">
-<%--
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
---%>
+    <%--
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    --%>
     <script src="../../js/jquery-1.8.3.min.js"></script>
     <script src="../../js/adminList.js"></script>
 </head>
@@ -79,7 +79,12 @@
                     <td><span>${employee.sex}</span></td>
                     <td><span>${employee.age}</span></td>
                     <td><span>${employee.deptName}</span></td>
-                    <td><span>${employee.ban}</span></td><%--此处需要修改--%>
+                    <td>
+                        <span>
+                        <c:if test="${employee.ban == 1}">禁用状态</c:if>
+                        <c:if test="${employee.ban == 0}">可用状态</c:if>
+                        </span>
+                    </td>
                     <td><span>${employee.email}</span></td>
                     <td><span>${employee.phone}</span></td>
                     <td>

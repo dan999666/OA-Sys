@@ -14,6 +14,7 @@ public interface SalaryService {
     public SalaryDTO getSalaryInfoById(String id) throws Exception;
 
     //修改工资值[待定]
+    public boolean modifySalaryById(Salary salary) throws Exception;
 
     //删除员工工资信息
     public boolean deleteInfoById(String id) throws Exception;

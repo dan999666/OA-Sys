@@ -6,10 +6,18 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>EmployeeServlet</servlet-name>
-    <servlet-class>com.dan.servlet.EmployeeServlet</servlet-class>
+    <servlet-class>com.dan.servlet.admin.EmployeeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>EmployeeServlet</servlet-name>
     <url-pattern>/jsp/admin/employee.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SalaryServlet</servlet-name>
+    <servlet-class>com.dan.servlet.admin.SalaryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalaryServlet</servlet-name>
+    <url-pattern>/jsp/admin/salary.do</url-pattern>
   </servlet-mapping>
 </web-app>
