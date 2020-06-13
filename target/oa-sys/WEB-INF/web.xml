@@ -20,4 +20,12 @@
     <servlet-name>SalaryServlet</servlet-name>
     <url-pattern>/jsp/admin/salary.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>RecordServlet</servlet-name>
+    <servlet-class>com.dan.servlet.admin.RecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecordServlet</servlet-name>
+    <url-pattern>/jsp/admin/record.do</url-pattern>
+  </servlet-mapping>
 </web-app>

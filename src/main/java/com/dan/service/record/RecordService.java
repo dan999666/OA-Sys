@@ -2,9 +2,7 @@ package com.dan.service.record;
 
 import com.dan.dto.RecordDTO;
 import com.dan.entity.Record;
-import jdk.nashorn.internal.runtime.ECMAException;
 
-import java.sql.Connection;
 import java.util.List;
 
 public interface RecordService {
