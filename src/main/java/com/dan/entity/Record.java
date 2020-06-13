@@ -24,6 +24,15 @@ public class Record {
 
     private Integer absentRecord;
 
+    private Double benifit;
+
+    public Double getBenifit() {
+        return benifit;
+    }
+
+    public void setBenifit(Double benifit) {
+        this.benifit = benifit;
+    }
 
     public Integer getRecordId() {
         return recordId;
