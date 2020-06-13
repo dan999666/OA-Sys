@@ -31,12 +31,12 @@
         </div>
         <nav>
             <ul class="list">
-                <li><a href="/oa_sys_war/jsp/employee.do?method=query" target="_blank">账户管理</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/employee.do?method=query" target="_blank">账户管理</a></li>
                 <li><a href="#" target="_blank">部门管理</a></li>
-                <li><a href="#" target="_blank">薪资基本参数</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/salary.do?method=query" target="_blank">薪资基本参数</a></li>
                 <li><a href="#" target="_blank">奖惩录入</a></li>
                 <li><a href="#" target="_blank">薪资发放</a></li>
-                <li><a href="/oa_sys_war/jsp/admin/salary.do?method=query" target="_blank">薪资查看</a></li>
+                <li><a href="#" target="_blank">薪资查看</a></li>
                 <li><a href="#" target="_blank">薪资统计</a></li>
             </ul>
         </nav>
@@ -51,6 +51,7 @@
                 <input value="查询" type="submit" id="search-button">
             </form>--%>
             <a href="${pageContext.request.contextPath }/jsp/admin/salaryAdd.jsp">添加员工工资记录</a>
+            <a href="">设置基本参数</a>
         </div>
         <table class="table-view">
             <tbody>

@@ -8,9 +8,10 @@ salaryServlet
 modify
 主要的重点是jsp页面数据 
 修改员工薪资数据
-
 映射数据(依据请求获得的参数进行页面数据的填装，转发页面)、提交修改数据传入数据库
-
 delete员工薪资数据
-
 add员工薪资数据
+
+薪资参数设置功能
+需要对salary重新构建
+weekendStandard weekendHour festivalStandard festival releaseStatus
