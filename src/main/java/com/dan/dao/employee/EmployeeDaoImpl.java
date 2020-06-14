@@ -2,9 +2,7 @@ package com.dan.dao.employee;
 
 import com.dan.dao.BaseDao;
 import com.dan.entity.Employee;
-import com.sun.xml.internal.bind.v2.model.core.ID;
 
-import java.awt.print.Book;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

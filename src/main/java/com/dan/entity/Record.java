@@ -1,11 +1,5 @@
 package com.dan.entity;
 
-/**
- * (Record)实体类
- *
- * @author Dan
- * @since 2020-06-09 10:00:15
- */
 public class Record {
 
     private Integer recordId;

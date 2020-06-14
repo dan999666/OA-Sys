@@ -1,11 +1,5 @@
 package com.dan.entity;
 
-/**
- * (Department)实体类
- *
- * @author Dan
- * @since 2020-06-09 09:59:59
- */
 public class Department {
 
     private Integer deptId;

@@ -1,11 +1,5 @@
 package com.dan.entity;
 
-/**
- * (Salary)实体类
- *
- * @author Dan
- * @since 2020-06-09 10:00:20
- */
 public class Salary {
 
     private Integer employeeId;
