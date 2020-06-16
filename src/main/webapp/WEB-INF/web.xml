@@ -28,4 +28,20 @@
     <servlet-name>RecordServlet</servlet-name>
     <url-pattern>/jsp/admin/record.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>DepartServlet</servlet-name>
+    <servlet-class>com.dan.servlet.admin.DepartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepartServlet</servlet-name>
+    <url-pattern>/jsp/admin/depart.do</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>CharacterEncoding</filter-name>
+    <filter-class>com.dan.filter.CharacterEncoding</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>

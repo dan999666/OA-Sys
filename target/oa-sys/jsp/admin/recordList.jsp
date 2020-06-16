@@ -32,11 +32,11 @@
         <nav>
             <ul class="list">
                 <li><a href="/oa_sys_war/jsp/admin/employee.do?method=query" target="_blank">账户管理</a></li>
-                <li><a href="#" target="_blank">部门管理</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/depart.do?method=query" target="_blank">部门管理</a></li>
                 <li><a href="/oa_sys_war/jsp/admin/salary.do?method=query" target="_blank">薪资基本参数</a></li>
-                <li><a href="#" target="_blank">奖惩录入</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/record.do?method=query" target="_blank">奖惩录入</a></li>
                 <li><a href="#" target="_blank">薪资发放</a></li>
-                <li><a href="#" target="_blank">薪资查看</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/salary.do?method=queryInfo" target="_blank">薪资查看</a></li>
                 <li><a href="#" target="_blank">薪资统计</a></li>
             </ul>
         </nav>

@@ -12,9 +12,16 @@ public interface DepartService {
     //更名部门
     public boolean renameDepartById(Department department) throws Exception;
 
-    //删除部门
-    public boolean deleteDepart(Department department) throws Exception;
+    //修改部门
+    public boolean modifyDepart(Department department) throws Exception;
 
     //获取所有部门信息
     public List<Department> getDepartInfo() throws Exception;
+
+    //删除部门信息
+    public boolean deleteDepartById(String id) throws Exception;
+
+    //通过id获取部门信息
+    public Department getDepartById(String id) throws Exception;
+
 }

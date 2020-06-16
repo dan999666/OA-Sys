@@ -32,26 +32,17 @@
         <nav>
             <ul class="list">
                 <li><a href="/oa_sys_war/jsp/admin/employee.do?method=query" target="_blank">账户管理</a></li>
-                <li><a href="#" target="_blank">部门管理</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/depart.do?method=query" target="_blank">部门管理</a></li>
                 <li><a href="/oa_sys_war/jsp/admin/salary.do?method=query" target="_blank">薪资基本参数</a></li>
-                <li><a href="#" target="_blank">奖惩录入</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/record.do?method=query" target="_blank">奖惩录入</a></li>
                 <li><a href="#" target="_blank">薪资发放</a></li>
-                <li><a href="/oa_sys_war/jsp/admin/salary.do?method=query" target="_blank">薪资查看</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/salary.do?method=queryInfo" target="_blank">薪资查看</a></li>
                 <li><a href="#" target="_blank">薪资统计</a></li>
             </ul>
         </nav>
     </div>
     <div class="right-content">
         <div class="search">
-            <%--<form action="" method="get">
-                <span>xx名称：</span>
-                <input type="text" name="" value="">
-                <span>xx</span>
-                <input type="text" name="" value="">
-                <input value="查询" type="submit" id="search-button">
-            </form>--%>
-            <%--<a href="${pageContext.request.contextPath }/jsp/admin/salaryAdd.jsp">添加员工工资记录</a>
-            <a href="">设置基本参数</a>--%>
         </div>
         <table class="table-view">
             <tbody>
@@ -63,7 +54,6 @@
                 <th width="10%">节假日加班工资</th>
                 <th width="8%">缺勤惩罚</th>
                 <th width="8%">迟到惩罚</th>
-<%--                <th width="20%">操作</th>--%>
             </tr>
             <c:forEach var="salaryDTO" items="${salaryList}">
                 <tr>
@@ -74,17 +64,6 @@
                     <td><span>${salaryDTO.festivalSalary}</span></td>
                     <td><span>${salaryDTO.absentPunish}</span></td>
                     <td><span>${salaryDTO.latePunish}</span></td>
-<%--                    <td>--%>
-<%--                            &lt;%&ndash;<span><a class="view-detail" href="javascript:;"--%>
-<%--                                     employeeId=${salaryDTO.employeeId}>查看</a>--%>
-<%--                            </span>&ndash;%&gt;--%>
-<%--                        <span><a class="modify" href="javascript:;"--%>
-<%--                                 employeeId=${salaryDTO.employeeId}>修改</a>--%>
-<%--                    </span>--%>
-<%--                        <span><a class="delete" href="javascript:;"--%>
-<%--                                 employeeId=${salaryDTO.employeeId}>删除</a>--%>
-<%--                    </span>--%>
-<%--                    </td>--%>
                 </tr>
             </c:forEach>
             </tbody>

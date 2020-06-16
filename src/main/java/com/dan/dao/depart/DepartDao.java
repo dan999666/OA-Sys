@@ -4,6 +4,7 @@ import com.dan.entity.Department;
 
 import java.sql.Connection;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public interface DepartDao {
 
@@ -21,4 +22,7 @@ public interface DepartDao {
 
     //获取所有部门信息
     public List<Department> getDepartInfo(Connection connection) throws Exception;
+
+    //获取指定部门信息
+    public Department getDepartInfoById(Connection connection, String id) throws Exception;
 }

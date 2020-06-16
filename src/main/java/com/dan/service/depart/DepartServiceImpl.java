@@ -4,6 +4,7 @@ import com.dan.dao.BaseDao;
 import com.dan.dao.depart.DepartDao;
 import com.dan.dao.depart.DepartDaoImpl;
 import com.dan.entity.Department;
+import jdk.nashorn.internal.ir.IfNode;
 
 import java.sql.Connection;
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public class DepartServiceImpl implements DepartService {
     }
 
     @Override
-    public boolean deleteDepart(Department department) throws Exception {
+    public boolean modifyDepart(Department department) throws Exception {
         boolean flag = false;
         Connection connection = BaseDao.getConnection();
         int res = departDao.modifyDepartById(connection, department);
@@ -62,5 +63,26 @@ public class DepartServiceImpl implements DepartService {
         List<Department> list = new ArrayList<>();
         list = departDao.getDepartInfo(connection);
         return list;
+    }
+
+    @Override
+    public boolean deleteDepartById(String id) throws Exception {
+        boolean flag = false;
+        Connection connection = BaseDao.getConnection();
+        int res = departDao.deleteDepartById(connection, id);
+        if (res > 0) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+        return flag;
+    }
+
+    @Override
+    public Department getDepartById(String id) throws Exception {
+        Department department = new Department();
+        Connection connection = BaseDao.getConnection();
+        department = departDao.getDepartInfoById(connection, id);
+        return department;
     }
 }

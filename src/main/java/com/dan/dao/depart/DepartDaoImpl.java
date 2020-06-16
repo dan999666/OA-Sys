@@ -70,4 +70,22 @@ public class DepartDaoImpl implements DepartDao {
         }
         return list;
     }
+
+    @Override
+    public Department getDepartInfoById(Connection connection, String id) throws Exception {
+        Department department = new Department();
+        PreparedStatement pstm = null;
+        ResultSet rs = null;
+        if (connection != null) {
+            String sql = "select * from department where deptId=?";
+            Object[] params = {id};
+            rs = BaseDao.execute(connection, pstm, rs, sql, params);
+            if (rs.next()){
+                department.setDeptId(rs.getInt("deptId"));
+                department.setDeptName(rs.getString("deptName"));
+            }
+        }
+        BaseDao.closeResource(connection,pstm,rs);
+        return department;
+    }
 }

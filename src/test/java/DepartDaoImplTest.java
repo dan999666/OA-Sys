@@ -30,7 +30,7 @@ class DepartDaoImplTest {
         Department department = new Department();
         department.setDeptId(32);
         department.setDeptName("国务院");
-        int res = departDao.modifyDepartById(connection,department);
+        int res = departDao.modifyDepartById(connection, department);
         System.out.println(res);
     }
 
@@ -51,5 +51,14 @@ class DepartDaoImplTest {
             System.out.println(department.toString());
         }
 
+    }
+
+    @Test
+    public void getDepartInfoByIdTest() throws Exception {
+        Connection connection = BaseDao.getConnection();
+        DepartDao departDao = new DepartDaoImpl();
+        String id = "1";
+        Department departInfoById = departDao.getDepartInfoById(connection, id);
+        System.out.println(departInfoById.toString());
     }
 }
