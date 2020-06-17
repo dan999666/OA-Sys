@@ -1,6 +1,6 @@
 package com.dan.dao.record;
 
-import com.dan.dto.RecordDTO;
+import com.dan.model.dto.RecordDTO;
 import com.dan.entity.Record;
 
 import java.sql.Connection;

@@ -3,7 +3,7 @@ package com.dan.service.record;
 import com.dan.dao.BaseDao;
 import com.dan.dao.record.RecordDao;
 import com.dan.dao.record.RecordDaoImpl;
-import com.dan.dto.RecordDTO;
+import com.dan.model.dto.RecordDTO;
 import com.dan.entity.Record;
 
 import java.sql.Connection;

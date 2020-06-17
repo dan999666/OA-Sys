@@ -1,4 +1,4 @@
-package com.dan.dto;
+package com.dan.model.dto;
 
 public class SalaryDTO {
     private Integer employeeId;

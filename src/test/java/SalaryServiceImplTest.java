@@ -1,4 +1,4 @@
-import com.dan.dto.SalaryDTO;
+import com.dan.model.dto.SalaryDTO;
 import com.dan.service.salary.SalaryService;
 import com.dan.service.salary.SalaryServiceImpl;
 import org.junit.jupiter.api.Test;

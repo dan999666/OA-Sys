@@ -1,6 +1,6 @@
 package com.dan.servlet.admin;
 
-import com.dan.dto.SalaryDTO;
+import com.dan.model.dto.SalaryDTO;
 import com.dan.entity.Salary;
 import com.dan.service.salary.SalaryService;
 import com.dan.service.salary.SalaryServiceImpl;

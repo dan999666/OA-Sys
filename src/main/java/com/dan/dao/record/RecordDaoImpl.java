@@ -1,10 +1,9 @@
 package com.dan.dao.record;
 
 import com.dan.dao.BaseDao;
-import com.dan.dto.RecordDTO;
+import com.dan.model.dto.RecordDTO;
 import com.dan.entity.Record;
 
-import java.security.interfaces.RSAKey;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

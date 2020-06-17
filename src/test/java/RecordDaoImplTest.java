@@ -1,14 +1,12 @@
 import com.dan.dao.BaseDao;
 import com.dan.dao.record.RecordDao;
 import com.dan.dao.record.RecordDaoImpl;
-import com.dan.dto.RecordDTO;
+import com.dan.model.dto.RecordDTO;
 import com.dan.entity.Record;
-import jdk.nashorn.internal.ir.IfNode;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 public class RecordDaoImplTest {
 

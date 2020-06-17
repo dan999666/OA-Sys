@@ -1,6 +1,6 @@
 package com.dan.service.salary;
 
-import com.dan.dto.SalaryDTO;
+import com.dan.model.dto.SalaryDTO;
 import com.dan.entity.Salary;
 
 import java.util.List;

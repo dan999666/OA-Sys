@@ -1,6 +1,6 @@
-package com.dan.entity;
+package com.dan.model;
 
-public class WageStatistics {
+public class Statistics {
 
     private double sumOfBasicSalary;
     private double sumOfweekendSalary;
@@ -8,6 +8,15 @@ public class WageStatistics {
     private double sumOfAbsentPunish;
     private double sumOfLatePunish;
     private int numsOfEmployee;
+    private int sumOfAll;
+
+    public int getSumOfAll() {
+        return sumOfAll;
+    }
+
+    public void setSumOfAll(int sumOfAll) {
+        this.sumOfAll = sumOfAll;
+    }
 
     public double getSumOfBasicSalary() {
         return sumOfBasicSalary;
@@ -59,13 +68,14 @@ public class WageStatistics {
 
     @Override
     public String toString() {
-        return "WageStatistics{" +
+        return "Statistics{" +
                 "sumOfBasicSalary=" + sumOfBasicSalary +
                 ", sumOfweekendSalary=" + sumOfweekendSalary +
                 ", sumOfFestivalSalary=" + sumOfFestivalSalary +
                 ", sumOfAbsentPunish=" + sumOfAbsentPunish +
                 ", sumOfLatePunish=" + sumOfLatePunish +
                 ", numsOfEmployee=" + numsOfEmployee +
+                ", sumOfAll=" + sumOfAll +
                 '}';
     }
 }

@@ -1,7 +1,7 @@
 package com.dan.dao.salary;
 
 import com.dan.dao.BaseDao;
-import com.dan.dto.SalaryDTO;
+import com.dan.model.dto.SalaryDTO;
 import com.dan.entity.Salary;
 
 import java.sql.Connection;

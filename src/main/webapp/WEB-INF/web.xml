@@ -36,6 +36,14 @@
     <servlet-name>DepartServlet</servlet-name>
     <url-pattern>/jsp/admin/depart.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>StatisticsServlet</servlet-name>
+    <servlet-class>com.dan.servlet.admin.StatisticsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StatisticsServlet</servlet-name>
+    <url-pattern>/jsp/admin/statistics.do</url-pattern>
+  </servlet-mapping>
   <filter>
     <filter-name>CharacterEncoding</filter-name>
     <filter-class>com.dan.filter.CharacterEncoding</filter-class>

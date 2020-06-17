@@ -1,6 +1,6 @@
 package com.dan.servlet.admin;
 
-import com.dan.dto.RecordDTO;
+import com.dan.model.dto.RecordDTO;
 import com.dan.entity.Record;
 import com.dan.service.record.RecordService;
 import com.dan.service.record.RecordServiceImpl;
