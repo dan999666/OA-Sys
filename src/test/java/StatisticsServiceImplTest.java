@@ -1,6 +1,6 @@
-package com.dan.service.statustics;
-
 import com.dan.model.Statistics;
+import com.dan.service.statustics.StatisticsService;
+import com.dan.service.statustics.StatisticsServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -23,4 +23,7 @@ public interface EmployeeService {
 
     //将员工关联到指定部门
     public boolean updateDepart(String depart, String id) throws Exception;
+
+    //登录功能
+    public Employee login(String userName,String password) throws Exception;
 }

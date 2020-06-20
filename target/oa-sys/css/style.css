@@ -279,3 +279,65 @@ input[type='button']{
     color: #ffffff;
     margin-left: -22px;
 }
+
+/*login page*/
+.login-box {
+    width: 1000px;
+    margin: 0 auto;
+    background: azure;
+}
+
+.login-header {
+    padding-top: 102px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.login-content {
+    width: 388px;
+    height: 284px;
+    margin: 0 auto;
+}
+
+.login-form {
+    background: azure;
+    width: 320px;
+    height: 140px;
+    border-radius: 8px;
+    padding: 90px 38px 48px 30px;
+}
+
+.login-form label {
+    width: 20%;
+    display: inline-block;
+}
+
+.input-box {
+    height: 60px;
+}
+
+.input-box input {
+    width: 66%;
+    padding: 10px 5px 10px 20px;
+    border: 1px solid rgb(178,178,178);
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(168,168,168,0.6) inset;
+}
+
+.sub-btn{
+    margin-left: 70px;
+}
+
+input[type='submit'],input[type='reset'] {
+    width: 30%;
+    cursor: pointer;
+    background: black;
+    padding: 6px 18px;
+    color: #ffffff;
+    border: 1px solid bisque;
+    margin-bottom: 10px;
+    margin-right: 22px;
+}
+.body-color{
+    background-color: azure;
+}

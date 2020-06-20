@@ -116,10 +116,37 @@ public class EmployeeDaoImpl implements EmployeeDao {
         PreparedStatement pstm = null;
         if (connection != null) {
             String sql = "UPDATE employee set deptName=? WHERE employeeId=?";
-            Object[] params ={departName, id};
+            Object[] params = {departName, id};
             flag = BaseDao.execute(connection, pstm, sql, params);
         }
-        BaseDao.closeResource(connection,pstm,null);
+        BaseDao.closeResource(connection, pstm, null);
         return flag;
+    }
+
+    @Override
+    public Employee login(Connection connection, String userName, String password) throws Exception {
+        Employee employee = new Employee();
+        PreparedStatement pstm = null;
+        ResultSet rs = null;
+        if (connection != null) {
+            String sql = "select * from employee where acountName=? and password=?";
+            Object[] params = {userName, password};
+            rs = BaseDao.execute(connection, pstm, rs, sql, params);
+            if (rs.next()) {
+                employee.setEmployeeId(rs.getInt("employeeId"));
+                employee.setAcountName(rs.getString("acountName"));
+                employee.setName(rs.getString("name"));
+                employee.setPassword(rs.getString("password"));
+                employee.setRole(rs.getString("role"));
+                employee.setSex(rs.getString("sex"));
+                employee.setAge(rs.getInt("age"));
+                employee.setBan(rs.getInt("ban"));
+                employee.setDeptName(rs.getString("deptName"));
+                employee.setEmail(rs.getString("email"));
+                employee.setPhone(rs.getString("phone"));
+            }
+            BaseDao.closeResource(connection, pstm, rs);
+        }
+        return employee;
     }
 }

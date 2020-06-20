@@ -85,4 +85,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
         return flag;
     }
+
+    @Override
+    public Employee login(String userName, String password) throws Exception {
+        Employee employee = new Employee();
+        Connection connection = BaseDao.getConnection();
+        employee = employeeDao.login(connection, userName, password);
+        return employee;
+    }
 }

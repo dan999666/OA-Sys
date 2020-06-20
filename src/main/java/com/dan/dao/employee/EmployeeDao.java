@@ -31,4 +31,7 @@ public interface EmployeeDao {
 
     //将员工关联到指定部门
     public int updateDepart(Connection connection, String departName,String id) throws Exception;
+
+    //依据用户名和密码查询用户信息
+    public Employee login(Connection connection,String userName, String password) throws Exception;
 }

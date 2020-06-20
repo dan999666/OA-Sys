@@ -76,4 +76,14 @@ public class EmployeeDaoImplTest {
         int flag = employeeDao.updateDepart(connection, depart, id);
         System.out.println(flag);
     }
+
+    @Test
+    public void loginTest() throws Exception {
+        Connection connection = BaseDao.getConnection();
+        EmployeeDao employeeDao = new EmployeeDaoImpl();
+        String userName = "root";
+        String password = "123456";
+        Employee login = employeeDao.login(connection, userName, password);
+        System.out.println(login.toString());
+    }
 }
