@@ -132,6 +132,6 @@ public class EmployeeServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("employeeList", list);
-        req.getRequestDispatcher("/jsp/admin/HrEmployeeList.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/admin/employeeList.jsp").forward(req, resp);
     }
 }

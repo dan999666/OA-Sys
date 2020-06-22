@@ -174,6 +174,6 @@ public class HrSalaryServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("salaryList", salaryList);
-        req.getRequestDispatcher("/jsp/hr/salaryList.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/hr/employeeSalaryList.jsp").forward(req, resp);
     }
 }

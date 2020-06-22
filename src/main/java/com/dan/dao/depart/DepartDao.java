@@ -25,4 +25,7 @@ public interface DepartDao {
 
     //获取指定部门信息
     public Department getDepartInfoById(Connection connection, String id) throws Exception;
+
+    //mergeDepart
+//    public int mergeDepart(Connection connection,String[] id) throws Exception;
 }

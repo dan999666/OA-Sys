@@ -28,39 +28,35 @@
         </div>
         <nav>
             <ul class="list">
-                <li><a href="#" target="_blank">账户管理</a></li>
-                <li><a href="#" target="_blank">部门管理</a></li>
-                <li><a href="#" target="_blank">薪资基本参数</a></li>
-                <li><a href="#" target="_blank">奖惩录入</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/employee.do?method=query" target="_blank">账户管理</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/depart.do?method=query" target="_blank">部门管理</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/salary.do?method=query" target="_blank">薪资基本参数</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/record.do?method=query" target="_blank">奖惩录入</a></li>
                 <li><a href="#" target="_blank">薪资发放</a></li>
-                <li><a href="#" target="_blank">薪资查看</a></li>
-                <li><a href="#" target="_blank">薪资统计</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/salary.do?method=queryInfo" target="_blank">薪资查看</a></li>
+                <li><a href="/oa_sys_war/jsp/admin/statistics.do?method=query" target="_blank">薪资统计</a></li>
             </ul>
         </nav>
     </div>
     <div class="right-content">
         <div class="add-table">
-            <form action="" id="" name="xxForm" method="post">
+            <form action="" id="" name="addForm" method="post">
                 <input type="hidden" name="method" value="add">
                 <div>
-                    <label>订单编码</label>
-                    <input type="text" name="billCode" id="billCode" value="">
+                    <label>薪资参数编号</label>
+                    <input type="text" name="id" id="id" value="">
                 </div>
                 <div>
-                    <label>商品名字</label>
-                    <input type="text" name="productName" id="productName" value="">
+                    <label>迟到扣薪标准</label>
+                    <input type="text" name="lateStandard" id="lateStandard" value="">
                 </div>
                 <div>
-                    <label>商品数量</label>
-                    <input type="text" name="productAmount" id="productAmount" value="">
+                    <label>旷工扣薪标准</label>
+                    <input type="text" name="absentStandard" id="absentStandard" value="">
                 </div>
                 <div>
-                    <label>总金额</label>
-                    <input type="text" name="sum" id="sum" value="">
-                </div>
-                <div>
-                    <label>供应商</label>
-                    <input type="text" name="apply" id="apply" value="">
+                    <label>加班薪资标准</label>
+                    <input type="text" name="overTimeStandard" id="overTimeStandard" value="">
                 </div>
                 <div class="add-btn">
                     <input type="button" name="add" id="add" value="保存">

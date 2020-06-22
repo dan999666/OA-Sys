@@ -51,7 +51,7 @@
                 <input value="查询" type="submit" id="search-button">
             </form>--%>
             <a href="${pageContext.request.contextPath }/jsp/admin/salaryAdd.jsp">添加员工工资记录</a>
-            <a href="">设置基本参数</a>
+            <a href="${pageContext.request.contextPath }/jsp/admin/salaryParamsAdd.jsp">设置基本参数</a>
         </div>
         <table class="table-view">
             <tbody>

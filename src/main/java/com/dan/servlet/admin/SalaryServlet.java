@@ -31,9 +31,9 @@ public class SalaryServlet extends HttpServlet {
         } else if (method != null && method.equals("delete")) {
             this.deleteSalaryInfo(req, resp);
         } else if (method != null && method.equals("add")) {
-            this.addSalaryRecord(req,resp);
-        } else if (method!=null&&method.equals("queryInfo")){
-            this.queryInfo(req,resp);
+            this.addSalaryRecord(req, resp);
+        } else if (method != null && method.equals("queryInfo")) {
+            this.queryInfo(req, resp);
         }
     }
 

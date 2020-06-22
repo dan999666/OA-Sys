@@ -46,14 +46,7 @@
     </div>
     <div class="right-content">
         <div class="search">
-            <form action="" method="get">
-                <span>xx名称：</span>
-                <input type="text" name="" value="">
-                <span>xx</span>
-                <input type="text" name="" value="">
-                <input value="查询" type="submit" id="search-button">
-                <a href="${pageContext.request.contextPath }/jsp/admin/employeeAdd.jsp">创建账号</a>
-            </form>
+            <a href="${pageContext.request.contextPath}/jsp/admin/employeeAdd.jsp">创建账号</a>
         </div>
         <table class="table-view">
             <tbody>

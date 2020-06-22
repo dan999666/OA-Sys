@@ -80,12 +80,13 @@ public class DepartDaoImpl implements DepartDao {
             String sql = "select * from department where deptId=?";
             Object[] params = {id};
             rs = BaseDao.execute(connection, pstm, rs, sql, params);
-            if (rs.next()){
+            if (rs.next()) {
                 department.setDeptId(rs.getInt("deptId"));
                 department.setDeptName(rs.getString("deptName"));
             }
         }
-        BaseDao.closeResource(connection,pstm,rs);
+        BaseDao.closeResource(connection, pstm, rs);
         return department;
     }
+
 }

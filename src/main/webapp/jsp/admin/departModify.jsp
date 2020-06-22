@@ -46,8 +46,8 @@
                   method="post">
                 <input type="hidden" name="method" value="modifySave">
                 <div>
-                    <label>部门编号</label>
-                    <input type="text" name="deptId" id="deptId" value="${depart.deptId}">
+                    <%--<label>部门编号</label>--%>
+                    <input type="hidden" name="deptId" id="deptId" value="${depart.deptId}">
                 </div>
                 <div>
                     <label>部门名字</label>
