@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>record modfiy</title>
+    <title>修改部门名字</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <script src="../../js/jquery-1.8.3.min.js"></script>

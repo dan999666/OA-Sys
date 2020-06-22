@@ -31,6 +31,43 @@ public class DepartServlet extends HttpServlet {
             this.deleteDepart(req, resp);
         } else if (method != null && method.equals("add")) {
             this.addDepart(req, resp);
+        } else if (method != null && method.equals("merge")) {
+            this.mergeDepart(req, resp);
+        }
+    }
+
+    private void mergeDepart(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        boolean flag = false;
+        String id1 = req.getParameter("id1");
+        String id2 = req.getParameter("id2");
+        String id3 = req.getParameter("id3");
+        String[] deleteIds = {id1, id2, id3};
+
+        String id4 = req.getParameter("id4");
+        int newDepartId = Integer.parseInt(id4);
+        String departName = req.getParameter("departName");
+
+        DepartServiceImpl departService = new DepartServiceImpl();
+        for (String i :deleteIds){
+            try {
+                departService.deleteDepartById(i);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        Department department = new Department();
+        department.setDeptId(newDepartId);
+        department.setDeptName(departName);
+
+        try {
+            flag = departService.createDepart(department);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if (flag) {
+            resp.sendRedirect(req.getContextPath() + "/jsp/admin/depart.do?method=query");
         }
     }
 
