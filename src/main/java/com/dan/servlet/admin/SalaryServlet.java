@@ -144,7 +144,7 @@ public class SalaryServlet extends HttpServlet {
 
         //页面转发
         if (flag) {
-            resp.sendRedirect(req.getContextPath() + "/jsp/admin/salary.do?method=query");
+            resp.sendRedirect(req.getContextPath() + "/jsp/admin/salaryRelease.do?method=query");
         }
     }
 

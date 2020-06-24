@@ -50,9 +50,10 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /*页面跳转，获取表单提交的参数
+        /* 页面跳转，获取表单提交的参数
          * 将参数转化为Employee类
-         * 调用employeeservice的方法将值存入数据库之中*/
+         * 调用employeeservice的方法将值存入数据库之中
+         * */
         Employee employee = new Employee();
         boolean flag = false;
 

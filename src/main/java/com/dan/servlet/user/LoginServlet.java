@@ -51,7 +51,7 @@ public class LoginServlet extends HttpServlet {
                 resp.sendRedirect("jsp/hr/index.jsp");
             } else if (role.equals("develop")) {
                 req.getSession().setAttribute("employeeRole", employee.getRole());
-                req.getSession().setAttribute("employeeId",employeeId);
+                req.getSession().setAttribute("employeeId", employeeId);
                 resp.sendRedirect("jsp/employee/index.jsp");
             } else if (role.equals("finance")) {
                 req.getSession().setAttribute("employeeRole", employee.getRole());

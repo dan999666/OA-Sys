@@ -52,6 +52,14 @@
         <servlet-name>SalaryParamsServlet</servlet-name>
         <url-pattern>/jsp/admin/salaryParams.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>SalaryReleaseServlet</servlet-name>
+        <servlet-class>com.dan.servlet.admin.SalaryReleaseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SalaryReleaseServlet</servlet-name>
+        <url-pattern>/jsp/admin/salaryRelease.do</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>CharacterEncoding</filter-name>
         <filter-class>com.dan.filter.CharacterEncoding</filter-class>

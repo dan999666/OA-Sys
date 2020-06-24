@@ -43,13 +43,6 @@
     </div>
     <div class="right-content">
         <div class="search">
-            <%--<form action="" method="get">
-                <span>xx名称：</span>
-                <input type="text" name="" value="">
-                <span>xx</span>
-                <input type="text" name="" value="">
-                <input value="查询" type="submit" id="search-button">
-            </form>--%>
             <a href="${pageContext.request.contextPath }/jsp/admin/salaryAdd.jsp">添加员工工资记录</a>
             <a href="${pageContext.request.contextPath }/jsp/admin/salaryParamsAdd.jsp">设置基本参数</a>
         </div>
@@ -75,15 +68,14 @@
                     <td><span>${salaryDTO.absentPunish}</span></td>
                     <td><span>${salaryDTO.latePunish}</span></td>
                     <td>
-                            <%--<span><a class="view-detail" href="javascript:;"
-                                     employeeId=${salaryDTO.employeeId}>查看</a>
-                            </span>--%>
-                        <span><a class="modify" href="javascript:;"
+                        <span>
+                            <a class="modify" href="javascript:;"
                                  employeeId=${salaryDTO.employeeId}>修改</a>
-                    </span>
-                        <span><a class="delete" href="javascript:;"
+                        </span>
+                        <span>
+                            <a class="delete" href="javascript:;"
                                  employeeId=${salaryDTO.employeeId}>删除</a>
-                    </span>
+                        </span>
                     </td>
                 </tr>
             </c:forEach>

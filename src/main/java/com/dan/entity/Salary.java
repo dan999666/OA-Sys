@@ -14,6 +14,15 @@ public class Salary {
 
     private Double latePunish;
 
+    private Integer releaseStatus;
+
+    public Integer getReleaseStatus() {
+        return releaseStatus;
+    }
+
+    public void setReleaseStatus(Integer releaseStatus) {
+        this.releaseStatus = releaseStatus;
+    }
 
     public Integer getEmployeeId() {
         return employeeId;
