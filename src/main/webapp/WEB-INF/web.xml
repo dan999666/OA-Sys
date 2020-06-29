@@ -109,6 +109,14 @@
         <servlet-name>EmployeeSalaryServlet</servlet-name>
         <url-pattern>/jsp/employee/employeeSalary.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>HrSalaryParamsServlet</servlet-name>
+        <servlet-class>com.dan.servlet.hr.HrSalaryParamsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HrSalaryParamsServlet</servlet-name>
+        <url-pattern>/jsp/hr/salaryParams.do</url-pattern>
+    </servlet-mapping>
     <welcome-file-list>
         <welcome-file>login.jsp</welcome-file>
     </welcome-file-list>

@@ -39,7 +39,7 @@
     <div class="right-content">
         <div class="search">
             <a href="${pageContext.request.contextPath }/jsp/hr/salaryAdd.jsp">添加员工工资记录</a>
-            <a href="">设置基本参数</a>
+            <a href="${pageContext.request.contextPath }/jsp/hr/salaryParamsAdd.jsp">设置基本参数</a>
         </div>
         <table class="table-view">
             <tbody>

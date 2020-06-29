@@ -14,7 +14,7 @@ public interface SalaryDao {
     //根据员工id获取员工信息
     public SalaryDTO getSalaryInfoById(Connection connection,String id) throws Exception;
 
-    //修改工资值需要修改的部分[待定]
+    //修改工资值需要修改的部分
     public int modifySalaryInfoById(Connection connection,Salary salary) throws Exception;
 
     //删除员工工资信息

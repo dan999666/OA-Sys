@@ -21,8 +21,8 @@ public class HrSalaryServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String employeeRole = req.getSession().getAttribute("employeeRole").toString();
-        System.out.println(employeeRole);
+   //     String employeeRole = req.getSession().getAttribute("employeeRole").toString();
+     //   System.out.println(employeeRole);
         String method = req.getParameter("method");
         if (method != null && method.equals("query")) {
             this.query(req, resp);
@@ -174,6 +174,6 @@ public class HrSalaryServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("salaryList", salaryList);
-        req.getRequestDispatcher("/jsp/hr/employeeSalaryList.jsp").forward(req, resp);
+        req.getRequestDispatcher("/jsp/hr/salaryList.jsp").forward(req, resp);
     }
 }
